@@ -6,7 +6,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { MessagesComponent } from './messages/messages.component'; // -- Ng module leaves here
+import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module'; // -- Ng module leaves here
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MessagesComponent } from './messages/messages.component'; // -- Ng modu
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
